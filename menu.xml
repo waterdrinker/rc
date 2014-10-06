@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+<menu id="apps-editors-menu" label="Editors">
+	<item label="GVim" icon="/usr/share/pixmaps/gvim.png">
+    <action name="Execute">
+      <command>gvim</command>
+      <startupnotify> <enabled>yes</enabled> <wmclass>GVim</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Emacs">
+    <action name="Execute">
+      <command>emacs</command>
+      <startupnotify> <enabled>yes</enabled> <wmclass>Emacs</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="1" label="Development">
+	<item label="Python" icon="/usr/lib/python3.4/idlelib/Icons/idle_48.png">
+		<action name="Execute"> <execute>xterm -e python</execute> </action> 
+	</item>
+	<item label="Qt4 Assistant"> <action name="Execute">
+		<execute>assistant-qt4</execute>
+	</action> </item>
+	<item label="Qt4 Designer"> <action name="Execute">
+		<execute>designer-qt4</execute>
+	</action> </item>
+	<item label="Qt4 Linguist"> <action name="Execute">
+	<execute>linguist-qt4</execute>
+	</action> </item>
+	<item label="Qt4 QDbusViewer"> <action name="Execute">
+		<execute>qdbusviewer-qt4</execute>
+	</action> </item>
+</menu>
+
+<menu id="apps-term-menu" label="Terminals">
+  <item label="XTerm" icon="/usr/share/pixmaps/xterm-color_48x48.xpm">
+    <action name="Execute"> <command>xterm</command> </action>
+  </item>
+</menu>
+
+<menu id="apps-net-menu" label="Internet">
+	<item label="Skype" icon="/usr/share/pixmaps/skype.png">
+    <action name="Execute">
+      <command>skype</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>skype</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Firefox" icon="/usr/share/icons/hicolor/48x48/apps/firefox.png">
+    <action name="Execute">
+      <command>firefox</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>Firefox</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Chromium" icon="/usr/share/icons/hicolor/48x48/apps/chromium.png">
+    <action name="Execute">
+      <command>chromium</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>chromium</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-office-menu" label="Office">
+	<item label="Evince" icon="/usr/share/icons/hicolor/48x48/apps/evince.png">
+		<action name="Execute"> <command>evince</command> </action> 
+	</item>
+	<item label="LibreOffice Impress"> 
+		<action name="Execute"> <execute>libreoffice</execute> </action> 
+	</item>
+</menu>
+
+<menu id="apps-multimedia-menu" label="Multimedia">
+	<item label="SMPlayer" icon="/usr/share/icons/hicolor/32x32/apps/smplayer.png">
+    <action name="Execute"> <command>smplayer</command> </action>
+  	</item>
+	<item label="VLC media player"> <action name="Execute">
+		<execute>vlc</execute>
+	</action> </item>
+</menu>
+
+<menu id="apps-fileman-menu" label="File Managers">
+  <item label="Nautilus"> </item>
+  <item label="Thunar"> </item>
+  <item label="KDE File Manager"> </item>
+  <item label="Rox"> </item>
+  <item label="PCMan File Manager"> </item>
+</menu>
+
+<menu id="apps-graphics-menu" label="Graphics">
+	<item label="Feh"> <action name="Execute">
+		<execute>feh</execute>
+	</action> </item>
+	<item label="The GIMP"> <action name="Execute">
+		<execute>gimp</execute>
+	</action> </item>
+	<item label="XGlyph"> <action name="Execute">
+		<execute>xglyph</execute>
+	</action> </item>
+</menu>
+
+<menu id="18" label="Games">
+	<item label="PacMan"> <action name="Execute">
+			<command>xpacman</command> </action> 
+	</item>
+</menu>
+
+<menu id="4" label="Science">
+	<item label="Stellarium nightsky renderer" icon="/usr/share/pixmaps/stellarium.png">
+		<action name="Execute">
+		<execute>stellarium</execute>
+	</action> </item>
+</menu>
+
+<menu id="39" label="Other">
+	<item label="CMake"> <action name="Execute">
+		<execute>cmake-gui</execute>
+	</action> </item>
+	<item label="Qt V4L2 test Utility"> <action name="Execute">
+		<execute>qv4l2</execute>
+	</action> </item>
+	<item label="TeamViewer 9"> <action name="Execute">
+		<execute>teamviewer</execute>
+	</action> </item>
+</menu>
+
+<menu id="system-settings" label="settings">
+	<item label="LXAppearance"> <action name="Execute">
+		<execute>lxappearance</execute>
+	</action> </item>
+	<item label="Panel tint2 conf"> 
+		<action name="Execute"> <execute>tint2conf</execute> </action> 
+	</item>
+	<item label="Fcitx Configuration"> <action name="Execute">
+		<execute>fcitx-configtool</execute>
+	</action> </item>
+	<item label="tint2conf"> <action name="Execute">
+		<execute>tint2conf</execute>
+	</action> </item>
+</menu>
+<menu id="system-menu" label="System">
+  	<menu id="system-settings"/>
+	<item label="Htop"> 
+		<action name="Execute"> <execute>xterm -e htop</execute> </action> 
+	</item>
+</menu>
+
+<menu id="openbox" label="OpenBox">
+  <item label="Openbox Configuration Manager">
+    <action name="Execute">
+      <command>obconf</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <item label="Reconfigure Openbox">
+    <action name="Reconfigure" />
+  </item>
+  <item label="Restart Openbox">
+    <action name="Restart" />
+  </item>
+</menu>
+
+
+<menu id="root-menu" label="Openbox 3">
+  <menu id="apps-editors-menu"/>
+  <menu id="1"/>
+  <menu id="apps-graphics-menu"/>
+  <menu id="apps-net-menu"/>
+  <menu id="apps-office-menu"/>
+  <menu id="apps-multimedia-menu"/>
+  <menu id="apps-term-menu"/>
+  <menu id="apps-fileman-menu"/>
+  <menu id="18"/>
+  <menu id="4"/>
+  <menu id="39"/>
+  <separator />
+  <menu id="client-list-combined-menu" label="Desktop"/>
+  <menu id="openbox"/>
+  <menu id="system-menu"/>
+  <separator />
+  <item label="Logout">
+    <action name="Exit"> <prompt>yes</prompt> </action>
+  </item>
+  <item label="Poweroff">
+	  <action name="Execute"><command>systemctl poweroff</command></action>
+  </item>
+</menu>
+
+</openbox_menu>
