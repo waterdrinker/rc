@@ -200,17 +200,17 @@
     <keybind key="W-u"> <action name="ToggleDecorations"/> </keybind>
 	<keybind key="W-t"> <action name="ToggleAlwaysOnTop"/> </keybind>
 	<keybind key="W-b"> <action name="ToggleAlwaysOnBottom"/> </keybind>
-    <keybind key="S-W-A-h">
-      <action name="SendToDesktopPrevious"> <dialog>no</dialog> </action>
+    <keybind key="C-A-h">
+      <action name="GoToDesktop"> <to>right</to> <wrap>yes</wrap> </action>
     </keybind>
-    <keybind key="S-W-A-l">
-      <action name="SendToDesktopNext"> <dialog>no</dialog> </action>
-    </keybind>
-    <keybind key="S-A-h">
+    <keybind key="C-A-l">
       <action name="GoToDesktop"> <to>left</to> <wrap>yes</wrap> </action>
     </keybind>
+    <keybind key="S-A-h">
+      <action name="SendToDesktopNext"> <dialog>no</dialog> </action>
+    </keybind>
     <keybind key="S-A-l">
-      <action name="GoToDesktop"> <to>right</to> <wrap>yes</wrap> </action>
+      <action name="SendToDesktopPrevious"> <dialog>no</dialog> </action>
     </keybind>
     <!-- move window -->
     <keybind key="W-S-h"> <action name="MoveRelative"> <x>-20</x> </action> </keybind>
@@ -235,20 +235,8 @@
     <keybind key="C-A-g">
       <action name="Execute"> <command>gvim</command> </action>
     </keybind>
-    <keybind key="C-A-c">
+    <keybind key="C-A-b">
       <action name="Execute"> <command>chromium</command> </action>
-    </keybind>
-    <keybind key="C-A-f">
-      <action name="Execute"> <command>firefox</command> </action>
-    </keybind>
-    <keybind key="C-A-s">
-      <action name="Execute"> <command>smplayer</command> </action>
-    </keybind>
-    <keybind key="C-A-v">
-      <action name="Execute"> <command>vlc</command> </action>
-    </keybind>
-    <keybind key="C-A-p">
-      <action name="Execute"> <command>gimp</command> </action>
     </keybind>
     <!-- Keybindings for desktop switching -->
     <keybind key="C-A-Left">
@@ -386,13 +374,13 @@
     </keybind>
     <!-- Keybindings for running applications -->
     <keybind key="W-e">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Konqueror</name>
-        </startupnotify>
-        <command>kfmclient openProfile filemanagement</command>
-      </action>
+      <action name="Execute"> <command>thunar</command> </action>
+    </keybind>
+    <keybind key="W-r">
+      <action name="Execute"> <command>dmenu_run</command> </action>
+    </keybind>
+    <keybind key="A-F2">
+      <action name="Execute"> <command>dmenu_run</command> </action>
     </keybind>
   </keyboard>
   <mouse>
